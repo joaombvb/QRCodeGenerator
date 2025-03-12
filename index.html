@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/pages/index/index.css">
+    <title>Gerador de QR Code</title>
+</head>
+<body>
+    <main>
+        <div class="section-1">
+            <div class="txt">
+                <h1>Gerador de QR Code</h1>
+                <p>Digite o link no campo abaixo e clique em 'Gerar QR Code' para criar seu código.</p>    
+            </div>
+    
+            <div class="link">
+                <input id="input-link" name="link" type="url" placeholder="Ex. https://www.link.com/teste">
+                <button type="button" onclick="gerarQrCode()">Gerar QR Code</button>
+            </div>
+            <div id="erro">
+                <p id="erro-txt">Campo vazio! Por favor, digite algo para continuar.</p>
+            </div>
+        </div>
+    
+        <div class="section-2">
+            <div id="qr-code-area">
+                <div id="qr-code">
+                    <img id="imagem">
+                    <p id="img-txt">O QR Code será exibido aqui.</p>
+                </div>
+                <span class="btn-func-txt">Imagem copiada para <br />área de transferência.</span>
+            </div>
+            <div id="div-btn">
+                <button class="btn" id="copy-btn" onclick="copy()">
+                    <img src="./assets/images/copy.png">
+                </button>
+                <button class="btn" id="download-btn" onclick="download()">
+                    <img src="./assets/images/download.png">
+                </button>
+            </div>
+        </div>
+    </main>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
