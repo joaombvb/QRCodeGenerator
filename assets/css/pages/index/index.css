@@ -86,7 +86,7 @@ main {
     }
 
     #erro {
-        display: none;
+        opacity: 0;
         padding: 10px;
     }
 
@@ -173,13 +173,21 @@ main {
     content: url('../../../images/download-hover.png'); /* Troca a imagem */
 }
 
-.btn-func-txt {
-    width: 220px;
-
+#btn-txt {
+    display: inline-block;  /* Faz com que o span tenha comportamento de bloco */
+    height: 40px;
+    max-height: 40px;
+    max-width: 200px;  /* Define a largura máxima */
+    word-break: break-word;  /* Quebra as palavras longas quando necessário */
+    
     color: var(--gray-200);
     font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
 
-    opacity: 100%;
+#btn-txt.visible {
+    opacity: 1;
 }
 
 
