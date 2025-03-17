@@ -1,9 +1,20 @@
 @import '../../global/global.css';
 
+body {
+    font-family: var(--fonte-primaria);
+    color: var(--branco);
+
+    background-image: url(../../../images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 main {
     height: 100vh;
 
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
@@ -14,96 +25,84 @@ main {
     display: flex;
     flex-direction: column;
 
-    .txt {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        margin-bottom: 36px;
-    
-        h1 {
-            font-size: 48px;
-            font-weight: 600;
-        }
-    
-        p {
-            font-size: 16px;
-            color: var(--gray-100);
-        }
-    }
-    
-    .link {
-        display: flex;
-        gap: 16px;
-
-        input {
-            width: 480px;
-            height: 48px;
-
-            padding-left: 44px;
-
-            background-image: url(../../../images/link-400.png);
-            background-repeat: no-repeat;
-            background-position: 16px center;
-            background-size: 16px 16px;
-
-            background-color: var(--gray-800);
-            border: 1px solid var(--gray-600);
-            border-radius: 10px;
-            outline: none;
-
-            color: var(--gray-100);
-            font-size: 16px;
-        }
-
-        input::placeholder {
-            color: var(--gray-400); 
-            font-size: 16px;
-        }
-
-        input:focus {
-            border-color: var(--gray-100);
-            background-image: url(../../../images/link-100.png);
-        }
-
-        button {
-            width: 192px;
-            height: 48px;
-
-            background-color: var(--gray-500);
-            border-radius: 10px;
-
-            color: var(--gray-100);
-            font-size: 16px;
-            font-weight: 500; 
-            
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: var(--gray-200);
-            color: var(--gray-900);
-        }
-    }
-
-    #erro {
-        opacity: 0;
-        padding: 10px;
-    }
-
-    #erro-txt {
-        color: var(--danger);
-        font-size: 12px;
-        font-weight: 400;
-    }
-
 }
 
+.txt {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 36px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.txt p {
+    font-size: 16px;
+    color: var(--gray-100);
+}
+
+
+.link {
+    display: flex;
+    gap: 16px;
+}
+
+.link input {
+    width: 480px;
+    height: 48px;
+    padding-left: 44px;
+    background-image: url(../../../images/link-400.png);
+    background-repeat: no-repeat;
+    background-position: 16px center;
+    background-size: 16px 16px;
+    background-color: var(--gray-800);
+    border: 1px solid var(--gray-600);
+    border-radius: 10px;
+    outline: none;
+    color: var(--gray-100);
+    font-size: 16px;
+}
+.link input::placeholder {
+    color: var(--gray-400); 
+    font-size: 16px;
+}
+.link input:focus {
+    border-color: var(--gray-100);
+    background-image: url(../../../images/link-100.png);
+}
+.link button {
+    width: 192px;
+    height: 48px;
+    background-color: var(--gray-500);
+    border-radius: 10px;
+    color: var(--gray-100);
+    font-size: 16px;
+    font-weight: 500; 
+    
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.link button:hover {
+    background-color: var(--gray-200);
+    color: var(--gray-900);
+}
+
+#erro {
+    opacity: 0;
+    padding: 10px;
+}
+#erro-txt {
+    color: var(--danger);
+    font-size: 12px;
+    font-weight: 300;
+}
 
 .section-2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column-row;
 
     margin-top: 32px;
 }
@@ -182,6 +181,7 @@ main {
     
     color: var(--gray-200);
     font-size: 12px;
+    font-weight: 300;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
@@ -190,4 +190,64 @@ main {
     opacity: 1;
 }
 
+/* Responsividade */
 
+@media screen and (max-width: 1000px) {
+    main {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .section-1 {
+        margin: 0 10%;
+    }
+    
+    .txt {
+        text-align: center;
+        align-items: center;
+        margin-bottom: 48px;
+    }
+
+
+    .txt h1 {
+        font-size: 36px;
+    }
+
+    .txt p {
+        font-size: 14px;
+        width: 80%;
+        word-wrap: break-word;
+        line-height: 120%;
+    }
+
+    .link {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .link input {
+        width: 380px;
+    }
+
+    .link input::placeholder {
+        font-size: 14px;
+    }
+
+    #erro {
+        padding: 10px 0 0;
+        text-align: center;
+    }
+
+    #erro-txt {
+        font-size: 10px;
+    }
+
+    .section-2 {
+        transform: translateX(21px);
+    }
+
+    #btn-txt {
+        font-size: 10px;
+    }
+}

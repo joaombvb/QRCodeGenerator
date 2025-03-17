@@ -15,11 +15,13 @@
             </div>
     
             <div class="link">
-                <input id="input-link" name="link" type="url" placeholder="Ex. https://www.link.com/teste">
+                <div class="input-area">
+                    <input id="input-link" name="link" type="url" placeholder="Ex. https://www.link.com/teste">
+                    <div id="erro">
+                        <p id="erro-txt">Campo vazio! Por favor, digite algo para continuar.</p>
+                    </div>
+                </div>
                 <button type="button" onclick="gerarQrCode()">Gerar QR Code</button>
-            </div>
-            <div id="erro">
-                <p id="erro-txt">Campo vazio! Por favor, digite algo para continuar.</p>
             </div>
         </div>
     

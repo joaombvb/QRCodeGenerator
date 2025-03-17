@@ -2,14 +2,3 @@
 @import './reset.css';
 @import './variables.css';
 
-body {
-    font-family: var(--fonte-primaria);
-    color: var(--branco);
-
-    background-image: url(../../images/background.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-
-}
