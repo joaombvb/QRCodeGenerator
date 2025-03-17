@@ -211,11 +211,11 @@ h1 {
 
 
     .txt h1 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .txt p {
-        font-size: 14px;
+        font-size: 12px;
         width: 80%;
         word-wrap: break-word;
         line-height: 120%;
@@ -228,7 +228,8 @@ h1 {
     }
 
     .link input {
-        width: 380px;
+        width: 320px;
+        font-size: 14px;
     }
 
     .link input::placeholder {
