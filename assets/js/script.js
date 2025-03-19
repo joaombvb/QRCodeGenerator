@@ -35,7 +35,7 @@ function gerarQrCode() {
     if (inputLink) {
         // Atualiza a imagem do QR Code com o link fornecido
         image.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(inputLink)}`;
-        image.alt = `QR Code para ${inputLink}`; // Melhora a acessibilidade
+        image.alt = `QR Code para ${inputLink}`; // Melhora a acessibilidade          
 
         // Esconde o texto informativo da imagem
         imageText.style.display = "none";
