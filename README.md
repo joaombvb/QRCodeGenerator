@@ -1,6 +1,6 @@
 # Gerador de QR Code
 
-![Prévia do Gerador de QR Code]([screenshot.png](https://media.licdn.com/dms/image/v2/D4D22AQF_DgZaL1Wlrw/feedshare-shrink_2048_1536/B4DZWmWsb4GkAo-/0/1742252725634?e=1745452800&v=beta&t=bkx2BOU6ES6r4BSwDkzvZWJh5Tk0Me2HmRlBh9DFf3w))
+![Prévia do Gerador de QR Code]([https://media.licdn.com/dms/image/v2/D4D22AQF_DgZaL1Wlrw/feedshare-shrink_2048_1536/B4DZWmWsb4GkAo-/0/1742252725634?e=1745452800&v=beta&t=bkx2BOU6ES6r4BSwDkzvZWJh5Tk0Me2HmRlBh9DFf3w])
 
 
 ## Descrição
@@ -20,11 +20,11 @@ Este é um projeto simples de Gerador de QR Code que permite ao usuário inserir
 ## Como Executar o Projeto
 1. Clone este repositório:
    ```sh
-   git clone https://github.com/seuusuario/gerador-qr-code.git
+   git clone https://github.com/joaombvb/QRCodeGenerator.git
    ```
 2. Acesse a pasta do projeto:
    ```sh
-   cd gerador-qr-code
+   cd QRCodeGenerator
    ```
 3. Abra o arquivo `index.html` em seu navegador.
 
