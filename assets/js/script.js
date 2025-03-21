@@ -98,7 +98,7 @@ async function copy() {
 
     try {
         // Converte a imagem em um Blob
-        const resposta = await fetch(imagem.src);
+        const resposta = await fetch(image.src);
         const blob = await resposta.blob();
 
         // Copia o Blob para a área de transferência
